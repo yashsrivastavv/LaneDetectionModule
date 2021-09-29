@@ -3,9 +3,9 @@
 
 ## Introduction
 
-Autonomous Driving Car is one of the most disruptive innovations in AI. Fuelled by Deep Learning algorithms, they are continuously driving our society forward and creating new opportunities in the mobility sector. An autonomous car can go anywhere a traditional car can go and does everything that an experienced human driver does. But it’s very essential to train it properly. One of the many steps involved during the training of an autonomous driving car is lane detection, which is the preliminary step. Today, we are going to learn how to perform lane detection using videos.
+Automatic lane detection is one of the most prudent innovations in AI. Which is done by Deep Learning algorithms, this lane detection algorithm help in protecting us while riding on lanes. This lane detection system works on image processing and edge detection process. The implement of lane detection is mainly used in autonomous vehicles but these vehicles need to be trained properly . One of the many features involved during the training of an autonomous driving car is lane detection, down are the following steps involved in lane detection system.
 ## Steps for Lane Detection
-- Capturing and decoding video file: We will capture the video using VideoCapture object and after the capturing has been initialized every video frame is decoded (i.e. converting into a sequence of images).
+- Recording and decoding video file: In this step the video will be captured using VideoCapture object and after the capturing is done every video frame is decoded (i.e. converting into a sequence of images).
 - Grayscale conversion of image: The video frames are in RGB format, RGB is converted to grayscale because processing a single channel image is faster than processing a three-channel colored image.
 - Reduce noise: Noise can create false edges, therefore before going further, it’s imperative to perform image smoothening. Gaussian filter is used to perform this process.
 - Canny Edge Detector: It computes gradient in all directions of our blurred image and traces the edges with large changes in intesity. For more explanation please go through this article: Canny Edge Detector
@@ -13,3 +13,4 @@ Autonomous Driving Car is one of the most disruptive innovations in AI. Fuelled 
 - Hough Line Transform: The Hough Line Transform is a transform used to detect straight lines. The Probabilistic Hough Line Transform is used here, which gives output as the extremes of the detected lines
 
 ## Implementation
+
